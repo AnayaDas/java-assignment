@@ -5,7 +5,7 @@ public class Box {
 	double breadth;
 	double height;
 	
-	Box() {
+	Box(Object obj) {
 		length = 100;
 		breadth = 50;
 		height = 50;

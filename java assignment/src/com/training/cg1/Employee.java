@@ -9,6 +9,19 @@ public class Employee {
 	private double pfamount;
 	private double emp_allownce;
 	private double emp_netsalary;
+	Employee() {
+		
+	}
+	Employee(Object obj) {
+		this.emp_id = emp_id;
+		this.emp_name = emp_name;
+		this.emp_dept = emp_dept;
+		this.emp_salary = emp_salary;
+		this.pfpercentage= pfpercentage;
+		this.pfamount = pfamount;
+		this.emp_allownce = emp_allownce;
+		this.emp_netsalary = emp_netsalary;
+	}
 	
 	public String getEmp_id() {
 		return emp_id;
@@ -58,6 +71,7 @@ public class Employee {
 	public void setEmp_netsalary(double emp_netsalary) {
 		this.emp_netsalary = emp_netsalary;
 	}	
+	
 	
 	public void calculate() {
 		double x = 0;

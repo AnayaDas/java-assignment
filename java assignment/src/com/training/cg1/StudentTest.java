@@ -5,6 +5,16 @@ public class StudentTest extends Student {
 		super(name, roll_no, total_marks);
 		// TODO Auto-generated constructor stub
 	}
+	public boolean isEqual(Object obj) {
+		if(this == obj) {
+			return true;
+		}
+		if (obj instanceof Student) {
+			Student stud = (Student) obj;
+			return((stud.name.equals(this.name)));
+		}
+		return false;
+	}
 
 	public static void main(String args[]) {
 		Student s1 = new Student ("John",10,87);
